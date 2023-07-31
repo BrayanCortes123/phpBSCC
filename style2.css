@@ -1,0 +1,253 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    font-size: 18px;
+
+}
+
+body {
+    background-color: black;
+    overflow-y:visible;
+    height: 100%;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    color: white;
+}
+
+.bar-menu{
+    color: white;
+    text-align: right;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+}
+
+nav a {
+    text-decoration: white;
+    color: white;
+    display: block;
+    padding: 0;
+}
+
+nav {
+    justify-content: center;
+    display: inline-block;
+    position: static;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    display: table;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.item-main-menu{
+    float: left;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 0px 0px  5px rgb(255, 255, 255);
+    
+}
+
+.item-main-menu:hover{
+    float: left;
+    line-height: 40px;
+    background-color: none;
+    border-radius: 5px;
+    border: 1px solid blue;
+    text-shadow: 2px 2px 10px blue;
+    box-shadow: 0px 0px 10px blue;
+    cursor: pointer;
+    transition: box-shadow 300ms;
+}
+
+nav>ul>li>ul>li{
+    float: left;
+    width: 200px;
+    line-height: 40px;
+    margin-left: -10px;
+}
+
+nav>ul>li>ul>li:hover {
+    background-color: rgb(184, 175, 224, 0.05);
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    text-shadow: 1px 1px 10px blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
+    transition: box-shadow 100ms;
+    cursor: pointer;
+}
+
+
+nav li {
+    position: relative;
+    display: inline-block;
+}
+
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav li:hover > ul >li {
+    visibility: visible;
+    max-height: 300px;
+    overflow: visible;
+    background-color: none;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+.masgrande{
+    width: 250px;
+}
+
+.normal {
+    width: 150px;
+}
+
+.nombre {
+    color: white;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 7%;
+}
+
+.nombrepri{
+    font-size: 90px;
+    font-family:'Teko', sans-serif;
+}
+
+.nombrepri:hover{
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: text-shadow 500ms;
+}
+
+.bar-menu{
+    color: white;
+    font-size: 1em;
+    text-align: right;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+}
+
+@media only screen and (max-width:1290px) {
+    
+    nav {
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        right: 0;
+    }
+    i{
+        padding: 10px;
+    }
+
+    @media only screen and (max-width:720px) {
+    
+        nav {
+            position: fixed;
+            height: 100vh;
+            width: 60%;
+            right: 0;
+        }
+        i{
+            padding: 10px;
+        } } 
+
+        @media only screen and (max-width:420px) {
+    
+            nav {
+                position: fixed;
+                height: 100vh;
+                width: 60%;
+                right: 0;
+            }
+            i{
+                padding: 10px;
+            }   
+    .bar-menu{
+        visibility: visible;
+        padding: 0px;
+        width: 100%;
+        color: white;
+        font-size: 1.3em;
+        height: 60px;
+       }
+       .bar-menu:hover{
+        cursor: pointer;
+    }
+    p{
+        padding: 10px;
+        font-size: 1.3em;
+       }
+    .main-menu{
+        margin-top: 61px;
+        display: none;
+    }
+    .main-menu-visible {
+        display: block;
+        margin-top: 61px;
+        width: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        right: 0;
+        height: 100vh;
+        max-height: 350px;
+     }
+
+    .item-main-menu{
+        display: block;
+        text-align: center;
+        font-size: 1.1em;
+        position: relative;
+        right: 0;
+        width: 100%;
+        border-bottom: 1px 10px solid white;
+    }
+    .bar-menu:hover{
+        cursor: pointer;
+    }
+    .nombrepri{
+        font-size: 50px;
+        font-family:'Teko', sans-serif;
+    }
+
+     nav>ul>li>ul{
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+
+    nav li:hover > ul >li {
+        width: 100%;
+        visibility: visible;
+        max-height: 1200px;
+        overflow:hidden;
+        background-color: none;
+        text-shadow: 1px 1px 10px rgb(255, 255, 255);
+    }
+
+
+    nav>ul>li>ul>li:hover{
+        width: 100%;
+        background-color: rgb(184, 175, 224, 0.05);
+        border-radius: 5px;
+        border: 1px solid green;
+        text-shadow: 1px 1px 10px green;
+        box-shadow: 0px 0px 10px green;
+        transition: box-shadow 300ms;
+        cursor: pointer;
+    }
+}}
